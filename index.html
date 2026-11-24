@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2d211b">
+  <meta name="description" content="Crumb & Co. เบเกอรี่อบสดย่านอารีย์ เปิดวันอังคารถึงอาทิตย์ 08.00–18.00 น. พร้อมผู้ช่วยตอบคำถามเรื่องขนม">
+  <title>Crumb & Co. | เบเกอรี่อบสด</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">อบใหม่ทุกวันที่เปิดร้าน · ย่านอารีย์ · อังคาร–อาทิตย์ 08.00–18.00 น.</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Crumb and Co หน้าแรก"><span class="brand-mark">✳</span><span>Crumb <em>&</em> Co.</span></a>
+      <nav class="main-nav" aria-label="เมนูหลัก">
+        <a href="#products">เมนูขนม</a><a href="#story">เรื่องของร้าน</a><a href="#faq">คำถามที่พบบ่อย</a>
+      </nav>
+      <div class="header-actions"><button class="text-button" id="ask-top" type="button">ถามน้องครัมบ์</button><button class="cart-button" id="cart-open" type="button" aria-label="เปิดตะกร้าสินค้า">ตะกร้า <span id="cart-count">0</span></button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/bakery-hero.png" alt="ครัวซองต์ ขนมปังซาวโดว์ และทาร์ตผลไม้บนโต๊ะไม้">
+      <div class="hero-shade"></div>
+      <div class="container hero-content"><p class="eyebrow light">อบสดใหม่ · ทำด้วยใจในทุกวันเปิดร้าน</p><h1 id="hero-title">ช่วงเวลาดี ๆ<br>เริ่มที่ขนมอบ</h1><p>เลือกขนมที่ชอบ แล้วให้ความหอมกรุ่นเติมความสุขให้วันนี้</p><div class="hero-actions"><a class="button button-cream" href="#products">เลือกขนมเลย</a><button class="button button-outline" id="ask-hero" type="button">ถามเรื่องขนม</button></div></div>
+      <div class="hero-tag">FRESH FROM THE OVEN <span>✦</span> MADE WITH LOVE</div>
+    </section>
+
+    <section class="trust-strip" aria-label="จุดเด่นร้าน"><div class="container trust-grid"><div><span>✳</span><strong>อบใหม่วันต่อวัน</strong><small>ขนมหอมกรุ่นจากเตา</small></div><div><span>♡</span><strong>เลือกวัตถุดิบดี</strong><small>ใส่ใจทุกชิ้น</small></div><div><span>✦</span><strong>ถามได้ทันที</strong><small>แชทบอทช่วยตอบจากข้อมูลร้าน</small></div></div></section>
+
+    <section class="products-section section-pad" id="products" aria-labelledby="products-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">OUR BAKES</p><h2 id="products-title">เมนูที่อยากให้ลอง</h2><p>เลือกจากเมนูเบเกอรี่ 4 รายการ แล้วถามน้องครัมบ์เรื่องราคา ส่วนผสม และรายละเอียดสินค้าได้</p></div><div class="category-tabs" role="group" aria-label="กรองประเภทสินค้า"><button type="button" class="active" data-filter="all">ทั้งหมด</button><button type="button" data-filter="pastry">เพสทรี</button><button type="button" data-filter="bread">ขนมปัง</button><button type="button" data-filter="dessert">ของหวาน</button></div></div><div class="product-grid" id="product-grid"></div></div></section>
+
+    <section class="story-section" id="story"><div class="container story-grid"><div class="story-art"><div class="story-quote">“ ขนมอบที่ดี<br>ทำให้วันธรรมดา<br>น่าจดจำ ”</div><span>BAKED WITH CARE</span></div><div class="story-copy"><p class="eyebrow">THE LITTLE STORY</p><h2>ความสุขชิ้นเล็ก<br>ที่ตั้งใจทำ</h2><p>Crumb & Co. เป็นร้านเบเกอรี่ย่านอารีย์ที่ทำขนมในครัวของร้าน เมนูมีทั้งเพสทรี ขนมปัง และของหวาน เราบอกราคา ขนาด รสชาติ และส่วนผสมให้เลือกได้ง่าย</p><p>เปิดวันอังคารถึงวันอาทิตย์ 08.00–18.00 น. เลือกขนมและสรุปรายการในตะกร้าบนเว็บ แล้วนำรายการไปยืนยันกับพนักงานที่เคาน์เตอร์</p><a href="#faq" class="inline-link">อ่านคำถามที่พบบ่อย <span aria-hidden="true">→</span></a></div></div></section>
+
+    <section class="faq-section section-pad" id="faq"><div class="container faq-grid"><div><p class="eyebrow">GOOD TO KNOW</p><h2>มีคำถามเรื่องขนมไหม?</h2><p>น้องครัมบ์ช่วยตอบเรื่องเมนู ราคาขาย ส่วนผสม สารก่อภูมิแพ้ เวลาเปิด การรับสินค้าและค่าส่งจากข้อมูล Crumb & Co.</p><button class="button button-dark" id="ask-faq" type="button">เปิดแชทถามเลย</button></div><div class="faq-list"><details><summary>มีเมนูอะไรให้เลือกบ้าง?</summary><p>มีครัวซองต์อัลมอนด์ 95 บาท ทาร์ตสตรอว์เบอร์รี 120 บาท ซาวโดว์ 180 บาทต่อก้อน และบราวนี 85 บาท</p></details><details><summary>มีข้อมูลสารก่อภูมิแพ้ไหม?</summary><p>ทุกเมนูมีแป้งสาลี ครัวซองต์มีนม ไข่ และอัลมอนด์ ร้านใช้ครัวร่วมกัน ผู้แพ้อาหารรุนแรงควรสอบถามพนักงานก่อนซื้อ</p></details><details><summary>สั่งซื้อผ่านเว็บได้ไหม?</summary><p>เว็บช่วยสรุปรายการในตะกร้า ให้นำรายการไปยืนยันและชำระเงินกับพนักงานที่เคาน์เตอร์</p></details></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">✳</span><span>Crumb <em>&</em> Co.</span></a><p>เบเกอรี่อบสดย่านอารีย์<br>ขนมทำในครัวของร้าน</p></div><div><strong>สำรวจ</strong><a href="#products">เมนูขนม</a><a href="#story">เรื่องของร้าน</a><a href="#faq">คำถามที่พบบ่อย</a></div><div><strong>เวลาเปิด</strong><p>อังคาร–อาทิตย์ 08.00–18.00 น.<br>หยุดวันจันทร์</p></div></div><div class="container footer-bottom">© <span id="year"></span> Crumb & Co.</div></footer>
+
+  <div class="drawer-backdrop" id="cart-backdrop" hidden></div><aside class="cart-drawer" id="cart-drawer" aria-label="ตะกร้าสินค้า" aria-hidden="true"><div class="drawer-head"><h2>ตะกร้าของคุณ</h2><button id="cart-close" type="button" aria-label="ปิดตะกร้า">×</button></div><div id="cart-items" class="cart-items"></div><div class="drawer-foot"><div class="total-row"><span>รวม</span><strong id="cart-total">฿0</strong></div><p>คัดลอกรายการเพื่อนำไปยืนยันและชำระเงินที่เคาน์เตอร์ร้าน</p><button class="button button-dark full" id="copy-order" type="button">คัดลอกรายการสินค้า</button><div id="cart-feedback" role="status" aria-live="polite"></div></div></aside>
+  <script src="shop.js"></script>
+  <script src="config.js"></script>
+  <script src="chat-search.js"></script>
+  <script src="chat-widget.js"></script>
+</body>
+</html>
