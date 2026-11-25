@@ -45,12 +45,13 @@
   const resolve = question => lookup.get(normalize(question)) || question;
   const grams = value => {const t=normalize(value),m=new Map();for(let i=0;i+3<=t.length;i++){const g=t.slice(i,i+3);m.set(g,(m.get(g)||0)+1)}let n=0;for(const v of m.values())n+=v*v;return {m,n:Math.sqrt(n)||1}};
   const similarity = (a,b) => {let dot=0;for(const [g,v] of a.m)dot+=v*(b.m.get(g)||0);return dot/(a.n*b.n)};
+  const exact = (question,qa) => {const needle=normalize(resolve(question));return qa.find(item=>item.question.split('|').some(alias=>normalize(alias)===needle))||null};
   const rank = (question,qa,limit=3) => {const needle=grams(resolve(question));return qa.map(item=>({
     ...item,
     text:`คำถาม: ${item.question}\nคำตอบ: ${item.answer}`,
     score:Math.max(...item.question.split('|').map(alias=>similarity(needle,grams(alias))))
   })).sort((a,b)=>b.score-a.score).slice(0,limit)};
-  const api={normalize,resolve,rank};
+  const api={normalize,resolve,exact,rank};
   root.CrumbSearch=api;
   if(typeof module==='object'&&module.exports)module.exports=api;
 })(typeof window==='undefined'?globalThis:window);

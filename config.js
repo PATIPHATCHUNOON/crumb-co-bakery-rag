@@ -4,7 +4,7 @@ window.CONFIG = {
   WORKER_URL: 'https://crumb-co-chat-api.patiphatchunoon.workers.dev',
   SEARCH_MODE: 'vector',
   EMBED_MODEL: 'nvidia/nemotron-3.5-embed-1b:free',
-  MODEL: 'nvidia/nemotron-3.5-super-vl:free', // ตรวจชื่อรุ่นที่ OpenRouter ก่อนใช้งาน
+  MODEL: 'nvidia/nemotron-3.5-lightning:free', // โมเดลข้อความที่ทดสอบความเร็วแล้ว
   VECTORS_FILE: 'vectors.json',
   DOCS_BASE: 'docs',
   FILES: [
